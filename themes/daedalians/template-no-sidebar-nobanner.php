@@ -1,3 +1,4 @@
+<?php /* template name: Page no sidebar no banner */ ?>
 <?php get_header(); ?>
 	<div class="container">
 		<div class="banner">

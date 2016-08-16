@@ -26,8 +26,22 @@
 				</div>
 			</div>
 
+			<div class="three-blocks-mobile row visible-xs text-center">
+				<a href="<?php bloginfo('url'); ?>/latest-news" class="col-xs-4">
+					<h3>Become a member</h3>
+				</a>
+				
+				<a href="<?php bloginfo('url'); ?>/airpower-forum" class="col-xs-4">
+					<h3>Find a flight</h3>
+				</a>
+				
+				<a href="<?php bloginfo('url'); ?>/awards" class="col-xs-4">
+					<h3>News and blog</h3>
+				</a>
+			</div>
+
 			<div class="three-blocks">
-				<div class="col-sm-4 item">
+				<div class="col-sm-4 item hidden-xs">
 					<div class="img">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/latest-news.png">
 						<div class="text">
@@ -57,7 +71,7 @@
 			</div>
 		</div>
 
-		<div class="second-slider">
+		<div class="second-slider hidden-xs">
 			<div class="slider-2">
 				<?php
 					$args = array(
@@ -80,12 +94,12 @@
 
 		<div class="container-2">
 			<div class="three-blocks-2 row">
-				<div class="col-sm-4 item calendar">
+				<div class="col-sm-4 item calendar hidden-xs">
 					<?php if ( ! dynamic_sidebar( 'primary-sidebar' ) ) : ?>
 						<?php dynamic_sidebar( 'primary-sidebar' ); ?>
 					<?php endif; ?>
 				</div>
-				<div class='col-sm-4 item'>
+				<div class='col-sm-4 col-xs-6 item'>
 					<div class="inner">
 						<div class="img">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/virtual-flight.png">
@@ -98,7 +112,7 @@
 					</div>
 					<a href="<?php bloginfo('url'); ?>/virtual-flight" class="btn-more">read more</a>
 				</div>
-				<div class='col-sm-4 item'>
+				<div class='col-sm-4 col-xs-6 item'>
 					<div class="inner">
 						<div class="img">
 							<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/member-spotlight.png">

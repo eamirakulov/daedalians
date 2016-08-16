@@ -40,7 +40,7 @@ wp_footer(); //* we need this for plugins
 			</div>
 		</div>
 	</footer>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.bxslider.min.js"></script>
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.bxslider.min.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/main.js"></script>
 </body>
 </html>
