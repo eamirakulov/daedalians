@@ -11,8 +11,10 @@ $('.slider-2').bxSlider({
 });
 $(function() {
 	//submenu position
-	var sub_height = $('.menu ul ul').height();
-	$('.menu ul ul').css('bottom', '-' + sub_height + 'px');
+	$('.menu ul ul').each(function() {
+		var sub_height = $(this).height();
+		$(this).css('bottom', '-' + sub_height + 'px');
+	});
 
 
     var scotchPanel = $('#scotch-panel').scotchPanel({

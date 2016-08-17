@@ -80,7 +80,7 @@ header .menu > ul > li > ul {
     display: none;
     position: absolute;
     left: 0;
-    width: 160px;
+    width: 200px;
     background: rgba(5, 85, 46, 0.77);
     z-index: 100;
     text-align: center;
@@ -492,9 +492,12 @@ body.page-template{
 .entry_title{
   font-size: 36px;
   color: #145b3c;
-  margin: 25px 0 0 0;
+  margin: 25px 0;
   text-transform: uppercase;
   background: url(../images/line.png) repeat-x center center;
+}
+img {
+  max-width: 100%;
 }
 .entry_content{
   margin: 25px 0 0 0;
@@ -502,6 +505,60 @@ body.page-template{
 .entry_title span {
   background: #fff;
   padding-right: 17px;
+}
+.page-template-template-membership .banner {
+  position: relative;
+}
+.page-template-template-membership .banner img{
+  max-width: 100%;
+}
+
+.page-template-template-membership .calendar {
+  margin: 35px 0 0 0;
+}
+.page-template-template-membership .calendar .links {
+  margin-top: 25px;
+}
+.page-template-template-membership .calendar .links a {
+  font-size: 18px;
+  margin-bottom: 14px;
+  box-shadow: none;
+}
+.page-template-template-membership .spotlight h2 {
+  font-size: 18px;
+  color: #404634;
+  padding: 30px 0 13px 0;
+  margin: 0 0 20px 0;
+  background: url(../images/line-member.png) no-repeat bottom center;
+  text-align: center;
+}
+.merchandise img {
+  max-width: 100%;
+}
+
+.page-template-template-membership .banner .text {
+  position: absolute;
+  max-width: 700px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: -120px auto 0 auto;
+  text-align: center;
+}
+.page-template-template-membership .banner h1 {
+    font-size: 72px;
+    color: #ffffff;
+    text-shadow: 1px 5px 4.85px rgba(37, 43, 26, 0.35);
+    margin: 0 0 20px 0;
+}
+.page-template-template-membership .banner  h2 {
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: 1px 5px 4.85px rgba(37, 43, 26, 0.35);
+    margin: 0 0 20px 0;
+}
+.page-template-template-membership .banner .btn-more {
+    color: #404634;
 }
 
 .toggle-panel {
@@ -538,13 +595,34 @@ body.page-template{
 .mobile-menu > ul > li > ul > li > a {
   font-size: 18px;
 }
-
 @media (max-width: 767px) {
+  .page-template-template-membership .banner .text {
+    position: initial;
+    margin-top: 25px;
+  }
+  .page-template-template-membership .banner .text h1 {
+    color: #404634;
+    font-size: 24px;
+  }
+  .page-template-template-membership .banner .text h2 {
+    color: #404634;
+    font-size: 16px;
+  }
+  .entry_title {
+    background: none;
+  }
   .logo img {
     max-width: 100%;
   }
   .main-slider .slide-text {
-    top: 20%;
+    top: 80px;
+  }
+
+  .main-slider h1 {
+    font-size: 24px;
+  }
+  .main-slider p {
+    padding: 0 15px;
   }
   .three-blocks-mobile  {
     margin-top: 25px;
@@ -581,6 +659,15 @@ body.page-template{
 
   .banner img {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .main-slider h1 {
+    font-size: 16px;
+  }
+  .main-slider p {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
