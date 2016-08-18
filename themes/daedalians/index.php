@@ -1,10 +1,9 @@
 <?php get_header(); ?>
-	
-	<?php if(have_posts()): the_post(); ?>
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<div class="container">
 			<article class="page">
 				<h2 class="entry_title">
-					<span><?php the_title(); ?></span>
+					<a href="<?php the_permalink(); ?>"><span><?php the_title(); ?></span></a>
 				</h2>
 
 				<div class="entry_content">
@@ -12,6 +11,6 @@
 				</div>
 			</article>
 		</div>
-	<?php endif; ?>
+	<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>

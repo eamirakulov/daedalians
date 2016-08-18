@@ -33,10 +33,6 @@ a:focus,
 a:visited {
     text-decoration: none !important;
 }
-a:focus,
-a:visited {
-    color: #fff;
-}
 header .top-bar {
     text-align: right;
 }
@@ -594,6 +590,10 @@ img {
 }
 .mobile-menu > ul > li > ul > li > a {
   font-size: 18px;
+}
+
+.blog .entry_title a {
+  color: #05552e;
 }
 @media (max-width: 767px) {
   .page-template-template-membership .banner .text {
