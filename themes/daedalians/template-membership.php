@@ -37,9 +37,9 @@
 							</div>
 
 							<div class="col-sm-8 links">
-								<a href="#" class="btn-flat">shop gear</a>
-								<a href="#" class="btn-flat">payments & dues</a>
-								<a href="#" class="btn-flat">apollo login</a>
+								<a href="#" class="btn-flat">become a member</a>
+								<a href="http://apollo.daedalians.org/flight_locator/flight_map" class="btn-flat">find a flight</a>
+								<a href="<?php bloginfo('url'); ?>/latest-news" class="btn-flat">news & events</a>
 							</div>
 						</div>
 
